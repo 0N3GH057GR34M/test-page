@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>What are HTML imports and how do they work</title>
+  </head>
+  <body>
+    <header class="main-header border-radius-bottom">
+        <div class="main-header-bar border-radius-bottom">
+            <span class="font-neue-ultra" style="margin-left: 1em">Super Qiuz</span>
+            
+            <div class="form-radio-group">
+                <div class="form-radio-group-item">
+                    <input id="primary" type="radio" name="radio" value="1" checked>
+                    <label for="primary">Главная</label>
+                </div>
+                <div class="form-radio-group-item">
+                    <input id="quiz" type="radio" name="radio" value="2">
+                    <label for="quiz">Квиз</label>
+                </div>
+                <div class="form-radio-group-item">
+                    <input id="review" type="radio" name="radio" value="3">
+                    <label for="review">Отзывы</label>
+                </div>
+                <div class="form-radio-group-item">
+                    <input id="secondary" type="radio" name="radio" value="4">
+                    <label for="secondary">Не главная</label>
+                </div>
+            </div>
+            
+            <div class="link-buttons" style="margin-right: 1em">
+                <div class="button border-radius-bottom border-radius-top pointer"
+                style="margin-right: 1em">Связаться с наими</div>
+                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/tiktok_logo_icon_186896.svg"
+                alt="tt" height="30px" width="30px" />
+                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/vk-social-logotype-svgrepo-com.svg"
+                alt="vk" height="30px" width="30px" />
+                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/telegram-svgrepo-com.svg"
+                alt="tg" height="30px" width="30px" />
+            </div>
+        </div>
+        <div class="main-header-content"></div>
+    </header>
+    <main class="main">
+        <div class="main-quiz"></div>
+        <div class="main-cards"></div>
+    </main>
+    <footer class="main-footer border-radius-top">
+        <div class="main-footer-links"></div>
+        <div class="main-footer-buttons"></div>
+    </footer>
+  </body>
+  <script>
+  </script>
+  <style lang="scss">
+    @font-face {
+        font-family: 'NeueMachina UltraBold'; 
+	    src: url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.ttf');
+    }
+    @font-face {
+        font-family: 'NeueMachina Bold'; 
+	    src: url('./assets/fonts/NeueMachina/NeueMachina-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Raleway'; 
+	    src: url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf');
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #FFCCFF;
+    }
+
+    .page-buttons {
+        font-family: 'Raleway';
+        font-weight: 500;
+        display: flex;
+    }
+
+    .link-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .border-radius-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .border-radius-bottom {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        font-family: 'Raleway';
+        font-weight: normal;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .button:hover {
+        background-color: #9933ff;
+    }
+
+    .main-header {
+        height: 25%;
+        background-color: white;
+    }
+    .main-header-bar {
+        width: calc(100% - 2px);
+        height: calc(60px - 2px);
+        border: 1px solid lightgrey;
+        font-family: 'NeueMachina UltraBold';
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .main {
+        height: 65%;
+    }
+
+    .main-footer {
+        height: 15%;
+        background-color: black;
+    }
+
+    .form-radio-group {
+	    display: flex;
+	    height: 100%;
+	    overflow: hidden;
+    }
+    .form-radio-group-item {
+	    display: flex;
+        flex-direction: row;
+        align-items: end;
+	    height: 100%;
+    }
+    .form-radio-group input[type=radio] {
+	    display: none;
+    }
+    .form-radio-group label {
+        font-family: 'Raleway';
+        font-weight: 500;
+	    cursor: pointer;
+	    padding: 0px 15px;
+        padding-bottom: 10px;
+	    border-right: none;
+	    user-select: none;
+    }
+
+    .form-radio-group input[type=radio]:checked + label {
+	    border-bottom: 3px solid black;
+    }
+  </style>
+</html>
