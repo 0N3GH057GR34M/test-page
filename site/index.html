@@ -7,7 +7,7 @@
   <body>
     <header class="main-header border-radius-bottom">
         <div class="main-header-bar border-radius-bottom">
-            <span class="font-neue-ultra" style="margin-left: 1em">Super Qiuz</span>
+            <span style="margin-left: 1em">Super Qiuz</span>
             
             <div class="form-radio-group">
                 <div class="form-radio-group-item">
@@ -39,15 +39,46 @@
                 alt="tg" height="30px" width="30px" />
             </div>
         </div>
-        <div class="main-header-content"></div>
+        <div class="main-header-content">
+            <span class="main-label">Это Супер-квиз!</span>
+            <span class="sub-label">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех</span>
+            <span class="sub-label">людей, Которые любят проходить тесты.</span>
+            <div class="button border-radius-bottom border-radius-top pointer"
+                style="margin-top: 0.5em">Пройти супер-квиз</div>
+        </div>
     </header>
     <main class="main">
         <div class="main-quiz"></div>
         <div class="main-cards"></div>
     </main>
     <footer class="main-footer border-radius-top">
-        <div class="main-footer-links"></div>
-        <div class="main-footer-buttons"></div>
+        <div class="main-footer-links">
+            <div class="contact-link-container">
+                <span class="contact-link-label pointer">Телефон</span>
+                <span class="contact-link">+375 12 345 67 89</span>
+            </div>
+            <div class="contact-link-container">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link pointer">ourmail@gmail.com</span>
+            </div>
+        </div>
+        <div class="main-footer-buttons">
+            <div class="footer-social-links">
+                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #202020;">
+                    <img src="./assets/icons/tiktok-svgrepo-com.svg"
+                        alt="tt" height="30px" width="30px" />
+                </div>
+                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #5181b8;">
+                    <img src="./assets/icons/vk-1-logo-svgrepo-com.svg"
+                        alt="vk" height="30px" width="30px" />
+                </div>
+                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #40B3E0;">
+                    <img src="./assets/icons/telegram-svgrepo-com.svg"
+                        alt="tg" height="30px" width="30px" />
+                </div>
+            </div>
+            <span class="footer-logo">Super Quiz</span>
+        </div>
     </footer>
   </body>
   <script>
@@ -82,7 +113,59 @@
         display: flex;
     }
 
-    .link-buttons{
+    .main-label {
+        font-family: 'NeueMachina Bold';
+        font-size: 50px;
+    }
+
+    .main-footer-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+
+    .footer-social-link {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    .footer-social-links {
+        display: flex;
+    }
+
+    .sub-label {
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    .footer-logo {
+        font-family: 'NeueMachina Bold';
+        color: white;
+    }
+
+    .contact-link {
+        font-family: 'NeueMachina Bold';
+        color: white;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-link-label {
+        font-family: 'Raleway';
+        color: white;
+    }
+
+    .contact-link-container {
+        margin-left: 0.5em;
+    }
+
+    .link-buttons {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -102,6 +185,13 @@
         cursor: pointer;
     }
 
+    .main-header-content {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
     .button {
         background-color: black;
         color: white;
@@ -115,8 +205,9 @@
     }
 
     .main-header {
-        height: 25%;
+        height: 30%;
         background-color: white;
+        position: relative;
     }
     .main-header-bar {
         width: calc(100% - 2px);
@@ -132,12 +223,20 @@
     }
 
     .main {
-        height: 65%;
+        height: 55%;
     }
 
     .main-footer {
         height: 15%;
         background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .main-footer-links {
+        display: flex;
     }
 
     .form-radio-group {
