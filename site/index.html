@@ -6,78 +6,95 @@
   </head>
   <body>
     <header class="main-header border-radius-bottom">
-        <div class="main-header-bar border-radius-bottom">
-            <span style="margin-left: 1em">Super Qiuz</span>
-            
-            <div class="form-radio-group">
-                <div class="form-radio-group-item">
-                    <input id="primary" type="radio" name="radio" value="1" checked>
-                    <label for="primary">Главная</label>
-                </div>
-                <div class="form-radio-group-item">
-                    <input id="quiz" type="radio" name="radio" value="2">
-                    <label for="quiz">Квиз</label>
-                </div>
-                <div class="form-radio-group-item">
-                    <input id="review" type="radio" name="radio" value="3">
-                    <label for="review">Отзывы</label>
-                </div>
-                <div class="form-radio-group-item">
-                    <input id="secondary" type="radio" name="radio" value="4">
-                    <label for="secondary">Не главная</label>
-                </div>
+        <span style="margin-left: 1em">Super Qiuz</span>
+        <div class="form-radio-group">
+            <div class="form-radio-group-item">
+                <input id="primary" type="radio" name="radio" value="1" checked>
+                <label for="primary">Главная</label>
             </div>
-            
-            <div class="link-buttons" style="margin-right: 1em">
-                <div class="button border-radius-bottom border-radius-top pointer"
-                style="margin-right: 1em">Связаться с наими</div>
-                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/tiktok_logo_icon_186896.svg"
-                alt="tt" height="30px" width="30px" />
-                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/vk-social-logotype-svgrepo-com.svg"
-                alt="vk" height="30px" width="30px" />
-                <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/telegram-svgrepo-com.svg"
-                alt="tg" height="30px" width="30px" />
+            <div class="form-radio-group-item">
+                <input id="quiz" type="radio" name="radio" value="2">
+                <label for="quiz">Квиз</label>
+            </div>
+            <div class="form-radio-group-item">
+                <input id="review" type="radio" name="radio" value="3">
+                <label for="review">Отзывы</label>
+            </div>
+            <div class="form-radio-group-item">
+                <input id="secondary" type="radio" name="radio" value="4">
+                <label for="secondary">Не главная</label>
             </div>
         </div>
-        <div class="main-header-content">
+        <div class="link-buttons" style="margin-right: 1em">
+            <div class="button border-radius-bottom border-radius-top pointer"
+            style="margin-right: 1em">Связаться с наими</div>
+            <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/tiktok_logo_icon_186896.svg"
+            alt="tt" height="30px" width="30px" />
+            <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/vk-social-logotype-svgrepo-com.svg"
+            alt="vk" height="30px" width="30px" />
+            <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/telegram-svgrepo-com.svg"
+            alt="tg" height="30px" width="30px" />
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-banner border-radius-bottom">
             <span class="main-label">Это Супер-квиз!</span>
             <span class="sub-label">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех</span>
             <span class="sub-label">людей, Которые любят проходить тесты.</span>
             <div class="button border-radius-bottom border-radius-top pointer"
-                style="margin-top: 0.5em">Пройти супер-квиз</div>
+                style="margin: 1em">Пройти супер-квиз</div>
         </div>
-    </header>
-    <main class="main">
-        <div class="main-quiz"></div>
-        <div class="main-cards"></div>
+        <div class="main-chips">
+            <div class="chip border-radius-bottom border-radius-top">&#128523; Восхитительно</div>
+            <div class="chip border-radius-bottom border-radius-top">&#128526; Лучше не бывает</div>
+            <div class="chip border-radius-bottom border-radius-top">&#128525; Где найти еще?</div>
+            <div class="chip border-radius-bottom border-radius-top">&#129321; В натуре четко!</div>
+            <div class="chip border-radius-bottom border-radius-top">&#128525; Круто</div>
+        </div>
+        <div class="main-quiz">
+            <div class="main-quiz-steps"></div>
+            <div class="main-quiz-window"></div>
+        </div>
+        <div class="main-cards">
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+            <div class="card border-radius-bottom border-radius-top"></div>
+        </div>
     </main>
-    <footer class="main-footer border-radius-top">
-        <div class="main-footer-links">
-            <div class="contact-link-container">
-                <span class="contact-link-label pointer">Телефон</span>
-                <span class="contact-link">+375 12 345 67 89</span>
-            </div>
-            <div class="contact-link-container">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link pointer">ourmail@gmail.com</span>
-            </div>
-        </div>
-        <div class="main-footer-buttons">
-            <div class="footer-social-links">
-                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #202020;">
-                    <img src="./assets/icons/tiktok-svgrepo-com.svg"
-                        alt="tt" height="30px" width="30px" />
+    <footer class="main-footer">
+        <div class="footer border-radius-top">
+            <div class="main-footer-links">
+                <div class="contact-link-container">
+                    <span class="contact-link-label pointer">Телефон</span>
+                    <span class="contact-link">+375 12 345 67 89</span>
                 </div>
-                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #5181b8;">
-                    <img src="./assets/icons/vk-1-logo-svgrepo-com.svg"
-                        alt="vk" height="30px" width="30px" />
-                </div>
-                <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #40B3E0;">
-                    <img src="./assets/icons/telegram-svgrepo-com.svg"
-                        alt="tg" height="30px" width="30px" />
+                <div class="contact-link-container">
+                    <span class="contact-link-label">Email</span>
+                    <span class="contact-link pointer">ourmail@gmail.com</span>
                 </div>
             </div>
-            <span class="footer-logo">Super Quiz</span>
+            <div class="main-footer-buttons">
+                <div class="footer-social-links">
+                    <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #202020;">
+                        <img src="./assets/icons/tiktok-svgrepo-com.svg"
+                            alt="tt" height="30px" width="30px" />
+                    </div>
+                    <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #5181b8;">
+                        <img src="./assets/icons/vk-1-logo-svgrepo-com.svg"
+                            alt="vk" height="30px" width="30px" />
+                    </div>
+                    <div class="footer-social-link border-radius-bottom border-radius-top pointer" style="background-color: #40B3E0;">
+                        <img src="./assets/icons/telegram-svgrepo-com.svg"
+                            alt="tg" height="30px" width="30px" />
+                    </div>
+                </div>
+                <span class="footer-logo">Super Quiz</span>
+            </div>
         </div>
     </footer>
   </body>
@@ -97,14 +114,18 @@
 	    src: url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf');
     }
 
+    html {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
     body {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #FFCCFF;
     }
 
     .page-buttons {
@@ -116,6 +137,56 @@
     .main-label {
         font-family: 'NeueMachina Bold';
         font-size: 50px;
+        margin: 0.5em;
+    }
+
+    .main-chips {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway';
+        font-weight: 500;
+        margin-bottom: 2em;
+    }
+
+    .main-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        margin: 2em 0 2em 0;
+    }
+
+    .main-quiz {
+        width: 70%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-quiz-steps {
+        height: 100%;
+        width: 30%;
+    }
+
+    .main-quiz-window {
+        height: 100%;
+        width: 70%;
+    }
+
+    .card {
+        height: 180px;
+        width: 150px;
+        background-color: white;
+        margin: 1px;
+    }
+
+    .chip {
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
     }
 
     .main-footer-buttons {
@@ -123,6 +194,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0.5em;
+        padding-right: 1em;
     }
 
     .footer-social-link {
@@ -185,11 +257,15 @@
         cursor: pointer;
     }
 
-    .main-header-content {
+    .main-banner {
+        height: 100%;
+        width: 100%;
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-items: center;
+        padding: 1em;
     }
 
     .button {
@@ -205,11 +281,6 @@
     }
 
     .main-header {
-        height: 30%;
-        background-color: white;
-        position: relative;
-    }
-    .main-header-bar {
         width: calc(100% - 2px);
         height: calc(60px - 2px);
         border: 1px solid lightgrey;
@@ -219,16 +290,28 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        left: 0;
     }
 
     .main {
-        height: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-color: #FFCCFF;
     }
 
     .main-footer {
-        height: 15%;
+        background-color: #FFCCFF;
+    }
+
+    .footer {
         background-color: black;
+        height: 120px;
         display: flex;
         flex-direction: column;
         justify-content: center;
