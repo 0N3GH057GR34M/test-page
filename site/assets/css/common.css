@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'NeueMachina UltraBold'; 
+    src: url('../fonts/NeueMachina/NeueMachina-Ultrabold.ttf');
+}
+@font-face {
+    font-family: 'NeueMachina Bold'; 
+    src: url('../fonts/NeueMachina/NeueMachina-Bold.ttf');
+}
+@font-face {
+    font-family: 'Raleway'; 
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: normal;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.button:hover {
+    background-color: #9933ff;
+}
+
+.border-radius-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.border-radius-bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.border-radius-top-right {
+    border-top-right-radius: 15px;
+}
+
+.border-radius-bottom-right {
+    border-bottom-right-radius: 15px;
+}

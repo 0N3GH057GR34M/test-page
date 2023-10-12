@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>What are HTML imports and how do they work</title>
+    <link href="./assets/css/index.css" rel="stylesheet">
+    <link href="./assets/css/common.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/header.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header border-radius-bottom">
@@ -27,7 +32,7 @@
         </div>
         <div class="link-buttons" style="margin-right: 1em">
             <div class="button border-radius-bottom border-radius-top pointer"
-            style="margin-right: 1em">Связаться с наими</div>
+            style="margin-right: 1em">Связаться с нами</div>
             <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/tiktok_logo_icon_186896.svg"
             alt="tt" height="30px" width="30px" />
             <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/vk-social-logotype-svgrepo-com.svg"
@@ -52,15 +57,14 @@
             <div class="chip border-radius-bottom border-radius-top">&#128525; Круто</div>
         </div>
         <div class="main-quiz">
-            <div class="main-quiz-steps"></div>
-            <div class="main-quiz-window"></div>
+            <div class="main-quiz-steps">
+                <div class="step border-radius-top-right"></div>
+                <div class="step"></div>
+                <div class="step border-radius-bottom-right"></div>
+            </div>
+            <div class="main-quiz-window border-radius-bottom border-radius-top"></div>
         </div>
         <div class="main-cards">
-            <div class="card border-radius-bottom border-radius-top"></div>
-            <div class="card border-radius-bottom border-radius-top"></div>
-            <div class="card border-radius-bottom border-radius-top"></div>
-            <div class="card border-radius-bottom border-radius-top"></div>
-            <div class="card border-radius-bottom border-radius-top"></div>
             <div class="card border-radius-bottom border-radius-top"></div>
             <div class="card border-radius-bottom border-radius-top"></div>
             <div class="card border-radius-bottom border-radius-top"></div>
@@ -100,254 +104,4 @@
   </body>
   <script>
   </script>
-  <style lang="scss">
-    @font-face {
-        font-family: 'NeueMachina UltraBold'; 
-	    src: url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.ttf');
-    }
-    @font-face {
-        font-family: 'NeueMachina Bold'; 
-	    src: url('./assets/fonts/NeueMachina/NeueMachina-Bold.ttf');
-    }
-    @font-face {
-        font-family: 'Raleway'; 
-	    src: url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf');
-    }
-
-    html {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    body {
-        width: 100vw;
-        height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .page-buttons {
-        font-family: 'Raleway';
-        font-weight: 500;
-        display: flex;
-    }
-
-    .main-label {
-        font-family: 'NeueMachina Bold';
-        font-size: 50px;
-        margin: 0.5em;
-    }
-
-    .main-chips {
-        display: flex;
-        justify-content: center;
-        font-family: 'Raleway';
-        font-weight: 500;
-        margin-bottom: 2em;
-    }
-
-    .main-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        overflow-x: hidden;
-        margin: 2em 0 2em 0;
-    }
-
-    .main-quiz {
-        width: 70%;
-        height: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-quiz-steps {
-        height: 100%;
-        width: 30%;
-    }
-
-    .main-quiz-window {
-        height: 100%;
-        width: 70%;
-    }
-
-    .card {
-        height: 180px;
-        width: 150px;
-        background-color: white;
-        margin: 1px;
-    }
-
-    .chip {
-        background-color: white;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .main-footer-buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5em;
-        padding-right: 1em;
-    }
-
-    .footer-social-link {
-        width: 100px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        margin-left: 5px;
-    }
-
-    .footer-social-links {
-        display: flex;
-    }
-
-    .sub-label {
-        font-family: 'Raleway';
-        font-weight: 600;
-    }
-
-    .footer-logo {
-        font-family: 'NeueMachina Bold';
-        color: white;
-    }
-
-    .contact-link {
-        font-family: 'NeueMachina Bold';
-        color: white;
-        border-bottom: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .contact-link-label {
-        font-family: 'Raleway';
-        color: white;
-    }
-
-    .contact-link-container {
-        margin-left: 0.5em;
-    }
-
-    .link-buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .border-radius-top {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .border-radius-bottom {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-
-    .pointer {
-        cursor: pointer;
-    }
-
-    .main-banner {
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        align-items: center;
-        padding: 1em;
-    }
-
-    .button {
-        background-color: black;
-        color: white;
-        font-family: 'Raleway';
-        font-weight: normal;
-        padding: 0.5em 1em 0.5em 1em;
-    }
-
-    .button:hover {
-        background-color: #9933ff;
-    }
-
-    .main-header {
-        width: calc(100% - 2px);
-        height: calc(60px - 2px);
-        border: 1px solid lightgrey;
-        font-family: 'NeueMachina UltraBold';
-        font-size: large;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        position: sticky;
-        top: 0;
-        left: 0;
-    }
-
-    .main {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        background-color: #FFCCFF;
-    }
-
-    .main-footer {
-        background-color: #FFCCFF;
-    }
-
-    .footer {
-        background-color: black;
-        height: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    .main-footer-links {
-        display: flex;
-    }
-
-    .form-radio-group {
-	    display: flex;
-	    height: 100%;
-	    overflow: hidden;
-    }
-    .form-radio-group-item {
-	    display: flex;
-        flex-direction: row;
-        align-items: end;
-	    height: 100%;
-    }
-    .form-radio-group input[type=radio] {
-	    display: none;
-    }
-    .form-radio-group label {
-        font-family: 'Raleway';
-        font-weight: 500;
-	    cursor: pointer;
-	    padding: 0px 15px;
-        padding-bottom: 10px;
-	    border-right: none;
-	    user-select: none;
-    }
-
-    .form-radio-group input[type=radio]:checked + label {
-	    border-bottom: 3px solid black;
-    }
-  </style>
 </html>

@@ -1,0 +1,55 @@
+.main-header {
+    width: calc(100% - 2px);
+    height: calc(60px - 2px);
+    border: 1px solid lightgrey;
+    font-family: 'NeueMachina UltraBold';
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.page-buttons {
+    font-family: 'Raleway';
+    font-weight: 500;
+    display: flex;
+}
+
+.link-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-radio-group {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.form-radio-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 100%;
+}
+.form-radio-group input[type=radio] {
+    display: none;
+}
+.form-radio-group label {
+    font-family: 'Raleway';
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0px 15px;
+    padding-bottom: 10px;
+    border-right: none;
+    user-select: none;
+}
+
+.form-radio-group input[type=radio]:checked + label {
+    border-bottom: 3px solid black;
+}
