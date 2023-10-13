@@ -1,0 +1,71 @@
+.modal-background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    height: 700px;
+    width: 600px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.modal-header-text {
+    font-family: 'NeueMachina UltraBold';
+    font-size: 50px;
+    margin-left: 0.5em;
+}
+
+.modal-header-button {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin: 0.5em;
+}
+
+.modal-label {
+    font-family: 'Raleway';
+    font-weight: 500;
+    margin: 1em;
+}
+
+.modal-inputs {
+
+}
+
+.modal-chips {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em;
+}
+
+.modal-chip {
+    background-color: white;
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 5px 15px 5px 15px;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+}

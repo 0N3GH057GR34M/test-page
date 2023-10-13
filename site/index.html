@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>What are HTML imports and how do they work</title>
+    <title>Test task</title>
     <link href="./assets/css/index.css" rel="stylesheet">
     <link href="./assets/css/common.css" rel="stylesheet">
     <link href="./assets/css/footer.css" rel="stylesheet">
     <link href="./assets/css/main.css" rel="stylesheet">
     <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/modal.css" rel="stylesheet">
     <script src="./assets/js/index.js"></script>
   </head>
   <body>
@@ -33,7 +34,7 @@
         </div>
         <div class="link-buttons" style="margin-right: 1em">
             <div class="button border-radius-bottom border-radius-top pointer"
-            style="margin-right: 1em">Связаться с нами</div>
+            style="margin-right: 1em" onclick="switchModalWindow()">Связаться с нами</div>
             <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/tiktok_logo_icon_186896.svg"
             alt="tt" height="30px" width="30px" />
             <img class="pointer" style="margin-left: 0.5em" src="./assets/icons/vk-social-logotype-svgrepo-com.svg"
@@ -70,52 +71,52 @@
                 <div class="quiz-chips margin">
                     
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip1" name="quiz-chip1" value="1"
-                        onclick="switchCheckbox('quiz-chip1');">
+                        onclick="switchQuizCheckbox('quiz-chip1');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip1">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/cross-circle-svgrepo-com.svg"
                             alt="tg" height="20px" width="20px"/>
                         На темперамент</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip2" name="quiz-chip2" value="2"
-                        onclick="switchCheckbox('quiz-chip2');">
+                        onclick="switchQuizCheckbox('quiz-chip2');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip2">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         Кто я из вселенной Марвел</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip3" name="quiz-chip3" value="3"
-                        onclick="switchCheckbox('quiz-chip3');">
+                        onclick="switchQuizCheckbox('quiz-chip3');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip3">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         Увидел это</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip4" name="quiz-chip4" value="4"
-                        onclick="switchCheckbox('quiz-chip4');">
+                        onclick="switchQuizCheckbox('quiz-chip4');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip4">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         Мое тотемное животное</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip5" name="quiz-chip5" value="5"
-                        onclick="switchCheckbox('quiz-chip5');">
+                        onclick="switchQuizCheckbox('quiz-chip5');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip5">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         На IQ</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip6" name="quiz-chip6" value="6"
-                        onclick="switchCheckbox('quiz-chip6');">
+                        onclick="switchQuizCheckbox('quiz-chip6');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip6">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         На словарный запас</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip7" name="quiz-chip7" value="7"
-                        onclick="switchCheckbox('quiz-chip7');">
+                        onclick="switchQuizCheckbox('quiz-chip7');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip7">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         На логическое мышление</label>
                     <input class="custom-checkbox" type="checkbox" id="quiz-chip8" name="quiz-chip8" value="8"
-                        onclick="switchCheckbox('quiz-chip8');">
+                        onclick="switchQuizCheckbox('quiz-chip8');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip8">
                         <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" style="display: none;"/>
+                            alt="tg" height="20px" width="20px"/>
                         На уровень интеллекта</label>
                 </div>
                 <div class="button border-radius-bottom border-radius-top pointer margin">Продолжить</div>
@@ -158,7 +159,62 @@
             </div>
         </div>
     </footer>
+    <div id="modal" class="modal-background no-display">
+        <div class="modal border-radius-bottom border-radius-top">
+            <div class="modal-header">
+                <div class="modal-header-text neue">Заполните<br/>контакные<br/>данные</div>
+                <div class="modal-header-button">
+                    <img onclick="switchModalWindow()"
+                        class="pointer" style="margin: 0 0.5em 0 0.5em"
+                        src="./assets/icons/multiply-cross-svgrepo-com.svg"
+                        alt="tg" height="30px" width="30px" />
+                </div>
+            </div>
+            <div class="modal-label">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые любят проходить тесты!</div>
+            <div class="modal-inputs"></div>
+            <div class="modal-label">Этот квиз предназначен для тех людей, которые любят проходить тесты!</div>
+            <div class="modal-chips">
+                <input class="custom-checkbox" type="checkbox" id="modal-chip1" name="modal-chip1" value="1"
+                    onclick="switchModalCheckbox('modal-chip1');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip1">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Не знаю</label>
+                <input class="custom-checkbox" type="checkbox" id="modal-chip2" name="modal-chip2" value="2"
+                    onclick="switchModalCheckbox('modal-chip2');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip2">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Увидел это</label>
+                    <input class="custom-checkbox" type="checkbox" id="modal-chip3" name="modal-chip3" value="3"
+                    onclick="switchModalCheckbox('modal-chip3');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip3">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Вон то</label>
+                    <input class="custom-checkbox" type="checkbox" id="modal-chip4" name="modal-chip4" value="4"
+                    onclick="switchModalCheckbox('modal-chip4');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip4">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Вон то</label>
+                    <input class="custom-checkbox" type="checkbox" id="modal-chip5" name="modal-chip5" value="5"
+                    onclick="switchModalCheckbox('modal-chip5');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip5">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Увидел это</label>
+                    <input class="custom-checkbox" type="checkbox" id="modal-chip6" name="modal-chip6" value="6"
+                    onclick="switchModalCheckbox('modal-chip6');">
+                <label class="modal-chip border-radius-bottom border-radius-top pointer" for="modal-chip6">
+                    <img class="pointer" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/circle-svgrepo-com-black.svg"
+                        alt="tg" height="20px" width="20px"/>
+                    Не знаю</label>
+                    
+            </div>
+            <div class="button border-radius-bottom border-radius-top pointer margin"
+                style="width: 80%;">Продолжить</div>
+        </div>
+    </div>
   </body>
-  <script>
-  </script>
 </html>
