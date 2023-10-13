@@ -8,6 +8,7 @@
     <link href="./assets/css/footer.css" rel="stylesheet">
     <link href="./assets/css/main.css" rel="stylesheet">
     <link href="./assets/css/header.css" rel="stylesheet">
+    <script src="./assets/js/index.js"></script>
   </head>
   <body>
     <header class="main-header border-radius-bottom">
@@ -68,33 +69,53 @@
                 <span class="sub-label" style="margin-left: 1.5em; margin-bottom: 1.5em">полдня.</span>
                 <div class="quiz-chips margin">
                     
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip1" name="quiz-chip1" value="1">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip1" name="quiz-chip1" value="1"
+                        onclick="switchCheckbox('quiz-chip1');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip1">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em;" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px"/>
                         На темперамент</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip2" name="quiz-chip2" value="2" checked>
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip2" name="quiz-chip2" value="2"
+                        onclick="switchCheckbox('quiz-chip2');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip2">
-                        <img class="pointer" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" />
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         Кто я из вселенной Марвел</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip3" name="quiz-chip3" value="3">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip3" name="quiz-chip3" value="3"
+                        onclick="switchCheckbox('quiz-chip3');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip3">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         Увидел это</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip4" name="quiz-chip4" value="4">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip4" name="quiz-chip4" value="4"
+                        onclick="switchCheckbox('quiz-chip4');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip4">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         Мое тотемное животное</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip5" name="quiz-chip5" value="5">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip5" name="quiz-chip5" value="5"
+                        onclick="switchCheckbox('quiz-chip5');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip5">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         На IQ</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip6" name="quiz-chip6" value="6" checked>
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip6" name="quiz-chip6" value="6"
+                        onclick="switchCheckbox('quiz-chip6');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip6">
-                        <img class="pointer" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
-                            alt="tg" height="20px" width="20px" />
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         На словарный запас</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip7" name="quiz-chip7" value="7">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip7" name="quiz-chip7" value="7"
+                        onclick="switchCheckbox('quiz-chip7');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip7">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         На логическое мышление</label>
-                    <input class="custom-checkbox" type="checkbox" id="quiz-chip8" name="quiz-chip8" value="8">
+                    <input class="custom-checkbox" type="checkbox" id="quiz-chip8" name="quiz-chip8" value="8"
+                        onclick="switchCheckbox('quiz-chip8');">
                     <label class="quiz-chip border-radius-bottom border-radius-top pointer" for="quiz-chip8">
+                        <img class="pointer no-display" style="margin: 0 0.5em 0 0.5em" src="./assets/icons/cross-circle-svgrepo-com.svg"
+                            alt="tg" height="20px" width="20px" style="display: none;"/>
                         На уровень интеллекта</label>
                 </div>
                 <div class="button border-radius-bottom border-radius-top pointer margin">Продолжить</div>

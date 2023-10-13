@@ -48,3 +48,7 @@
 .margin {
     margin: 1.5em;
 }
+
+.no-display {
+    display: none;
+}
